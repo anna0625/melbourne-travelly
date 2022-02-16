@@ -1,6 +1,6 @@
 # annac-travelly
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9108be58-8d6e-4fd1-9493-4069f4059018/deploy-status)](https://app.netlify.com/sites/melbourne-travelly/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/baba2ee5-a3b8-4cca-b22f-64bee2572923/deploy-status)](https://app.netlify.com/sites/melbourne-travelly/deploys)
 
 ## Original Design from DEV ED
 
