@@ -1,0 +1,31 @@
+.main-head {
+    background: $background-color;
+    opacity: 0.8;
+    color: white;
+    /* to make nav bar stick on the top while scrolling */
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+nav {
+    min-height: 6vh;
+    width: 100%;
+    padding: 2rem;
+    @include flex(auto, center, auto);
+    flex-wrap: wrap;
+
+
+    ul {
+        flex: 1 1 40rem;  /* flex-grow, flex-shrink, flex-basis */
+        @include flex(space-around, center, row);
+        list-style: none;
+    }
+
+    #logo {
+        flex: 2 1 40rem;
+        font-family: 'Pattaya', sans-serif;
+        font-weight: 400;
+        color: white;
+    }
+}

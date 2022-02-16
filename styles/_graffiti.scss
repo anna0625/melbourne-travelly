@@ -1,0 +1,25 @@
+#graffiti {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), transparent), url(../img/melbourne/graffiti.jpg);
+    background-size: cover;
+    background-position: center;
+    @include flex(center, center, column);
+}
+
+.graffiti-head {
+    width: 90%;
+    margin: auto;
+
+    h2 {
+        padding: 1rem 0rem;
+        text-decoration: underline;
+        text-decoration-thickness: 0.5rem;
+    }
+
+    h3 {
+        padding: 4rem 0rem;
+        background: linear-gradient(#ffffff, #ffa89a);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

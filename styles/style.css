@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #36465a;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  /* 400 */
+}
+
+h4, h5 {
+  font-size: 2.8rem;
+}
+
+li, button, label, input, p, pre {
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: #4c6397;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #193353;
+}
+
+button:hover {
+  background: #193353;
+}
+
+.main-head {
+  background: #36465a;
+  opacity: 0.8;
+  color: white;
+  /* to make nav bar stick on the top while scrolling */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  min-height: 6vh;
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  /* flex-grow, flex-shrink, flex-basis */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+nav #logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.hero {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/melbourne/southbank_night.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/melbourne/southbank_night.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+#graffiti {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent)), url(../img/melbourne/graffiti.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../img/melbourne/graffiti.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.graffiti-head {
+  width: 90%;
+  margin: auto;
+}
+
+.graffiti-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.graffiti-head h3 {
+  padding: 4rem 0rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffa89a));
+  background: linear-gradient(#ffffff, #ffa89a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coffee-head {
+  min-height: 30vh;
+  background-color: #836f44;
+  padding: 3rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.coffee-head h3 {
+  padding: 1rem;
+}
+
+.cards-background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent)), url(../img/melbourne/coffe_street.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../img/melbourne/coffe_street.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  width: 90%;
+  min-height: 70vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  min-height: 40vh;
+  margin: 3rem 5rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.card h4, .card p {
+  padding: 1.5rem;
+  color: #193353;
+}
+
+.card-icon1 {
+  background: url(../img/coffee/latte.jpg);
+  min-height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-icon2 {
+  background: url(../img/coffee/flatwhite.jpg);
+  min-height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-icon3 {
+  background: url(../img/coffee/cappuccino.jpg);
+  min-height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-icon4 {
+  background: url(../img/coffee/long.jpg);
+  min-height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-icon5 {
+  background: url(../img/coffee/long-black.jpg);
+  min-height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-icon6 {
+  background: url(../img/coffee/ristretto.jpg);
+  min-height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#nature {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent)), url(../img/melbourne/nature.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../img/melbourne/nature.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-wrapper {
+  background: rgba(193, 197, 202, 0.021);
+  width: 50%;
+  color: white;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.form-text {
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+  opacity: 0.5;
+  -webkit-animation: cloudAnimation 3s infinite alternate  ease-in-out;
+          animation: cloudAnimation 3s infinite alternate  ease-in-out;
+}
+
+.moving-cloud-2 {
+  top: 0%;
+  z-index: 1;
+  opacity: 0.3;
+  -webkit-animation: cloudAnimation 4s infinite alternate  ease-in-out;
+          animation: cloudAnimation 4s infinite alternate  ease-in-out;
+}
+
+@-webkit-keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+footer {
+  min-height: 5vh;
+  color: white;
+  background: #36465a;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer h5 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+footer ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  list-style: none;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* --- Media Query --- */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .graffiti-head h3 {
+    background: rgba(19, 28, 39, 0.5);
+    -webkit-text-fill-color: white;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .form-wrapper {
+    width: 85%;
+    margin: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: 2;
+  }
+  .moving-cloud-2 {
+    z-index: 1;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 2rem;
+  }
+  footer ul {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

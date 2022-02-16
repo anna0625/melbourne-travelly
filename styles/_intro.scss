@@ -1,0 +1,14 @@
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url('../img/melbourne/southbank_night.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    @include flex(center, center, column);
+    text-align: center;
+
+    h3 {
+        padding: 5rem;
+    }
+}

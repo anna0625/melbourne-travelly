@@ -1,0 +1,63 @@
+#nature {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), transparent), url(../img/melbourne/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include flex(center, center, auto);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-wrapper {
+    background: rgba(193, 197, 202, 0.021);
+    width: 50%;
+    color: white;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.form-text {
+    text-align: center;
+    padding: 2rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.moving-cloud-1 {
+    opacity: 0.5;
+    animation: cloudAnimation 3s infinite alternate  ease-in-out;
+}
+
+.moving-cloud-2 {
+    top: 0%;
+    z-index: 1;
+    opacity: 0.3;
+    animation: cloudAnimation 4s infinite alternate  ease-in-out;
+}
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
