@@ -30,4 +30,4 @@ This is a simple travel website design based on HTML&CSS and built from strach. 
 
 ## Certificate
 
-![Certificate](img/certificate-of-completion-for-the-creative-html5-css3-course.jpg)
+![Certificate](img/others/certificate-of-completion-for-the-creative-html5-css3-course.jpg)
